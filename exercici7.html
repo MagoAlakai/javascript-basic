@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici7</title>
+</head>
+<body>
+    <script>
+        var objectes = [{taula: 'taula'}, {cadira: 'cadira'}, {ordinador: 'ordinador'}, {libreta:'libreta'}];
+        for(var i = 0; i < objectes.length; i++ ){
+            for(var key in objectes[i] )
+            console.log("L'objecte "+ objectes[i][key] +' está a la posició ' + i);
+        }
+    </script>
+</body>
+</html>

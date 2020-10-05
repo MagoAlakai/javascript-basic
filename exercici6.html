@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici6</title>
+</head>
+<body>
+    <script>
+        var frase = 'Tinc un cotxe de color verd';
+        console.log(frase);
+        var splited = frase.split(' ');
+        splited.splice((splited.length -1), 1);
+        splited.push('blau');
+        var joint = splited.join(' ');
+        console.log(joint);
+        var splited2 = joint.split('');
+        for(var i = 0; i < splited2.length; i++) {
+            if(splited2[i] === 'o') {
+                splited2[i] = 'u';
+            }
+        }
+        var joint2 = splited2.join('');
+        console.log(joint2);
+    </script>
+</body>
+</html>
